@@ -1,0 +1,4 @@
+FROM openjdk:12
+VOLUME /temp
+EXPOSE 8888
+ADD ./target/

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="springboot-servicio-productos"/>
+<aop-project name="springboot-servicio-eureka-server"/>
+<aop-project name="springboot-servicio-commons"/>
+<aop-project name="springboot-servicio-config-server"/>
+<aop-project name="springboot-servicio-oauth"/>
+<aop-project name="springboot-servicio-item"/>
+<aop-project name="springboot-servicio-usuarios"/>
+<aop-project name="commons-usuarios"/>
+<aop-project name="springboot-servicio-zuul-server"/>
+</aop-reference-model>

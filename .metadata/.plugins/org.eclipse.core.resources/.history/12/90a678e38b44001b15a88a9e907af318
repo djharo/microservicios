@@ -1,0 +1,16 @@
+spring.application.name=servicio-item
+#le idicamos a nuestro microservicio donde se encuentra la ruta del servidor de configuracion.
+#spring.cloud.config.uri=http://localhost:8888
+#Docker
+spring.cloud.config.uri=http://config-server:8888
+
+#En bootstrap se puede configurar tambien los distintos ambientes o prfiles (perfiles) desarrollo producion...
+#En este archivo solo se debe añadir lo anteriormente dicho perfiles y donde se encuentra la ruta de configuracion del servidor config-server para
+#que el microservicio tome las propiedades de configuracion del archivo properties que tiene su nombre en config-server.
+#Este archivo se iniciara primero al arrancar nuestra aplicacion para coger todas las configuraciones indicadas anteriormente.
+
+spring.profiles.active=dev
+management.endpoints.web.exposure.include=*
+#Añadiendo esta propiedad podemos hacer uso de las modificaciones que se hayan hecho en los properties de config-server sin necesidad de levantar el/los servicios.
+#Por Ejemplo en zull en AuthorizationServerConfig se hacd uso de las propiedades de application.properties añadiend la etiqueta @RefreshScope podemos hacer
+#uso de las propiedades del aplication sin levantar zull 
